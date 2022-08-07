@@ -1,6 +1,5 @@
 public class basicString {
     String name[] = new String[4];
-
     public static void main(String args[]) {
         basicString obj = new basicString();
 
