@@ -16,11 +16,13 @@ public class Myclass {
         obj.method2();
     }
 }
+
+
 //public class Myclass {
-//    String name = "Raju";
+//    final String name = "Raju";
 //    public static void main(String args[]) {
 //        Myclass obj = new Myclass();
-//        obj.name = "Lolipop";
+//        //obj.name = "Lolipop";
 //
 //        System.out.println(obj.name);
 //    }
@@ -35,4 +37,5 @@ public class Myclass {
 //
 //        System.out.println(obj.x);
 //    }
-//}
+//
+

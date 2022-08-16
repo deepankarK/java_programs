@@ -1,4 +1,4 @@
-public class basic extends basicString{
+public class basic{
     int marks[] = new int[4];
     public static void main(String args[]) {
         //int marks[] = new int[4];
