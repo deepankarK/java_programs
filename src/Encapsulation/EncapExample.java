@@ -5,5 +5,6 @@ public class EncapExample {
         Encapsulation_Person obj = new Encapsulation_Person();
         obj.setName("John");
         System.out.println(obj.getName());
+        System.out.println(obj.getName());
     }
 }
