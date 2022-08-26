@@ -1,34 +1,48 @@
 //wap to find majority element in an array
-public class MajorityElement {
-    static void findMajority(int array[], int n) {
+// Java program to find Majority
+// element in an array
+
+import java.io.*;
+
+class MajorityElement {
+
+    // Function to find Majority element
+    // in an array
+    static void findMajority(int arr[], int n)
+    {
         int maxCount = 0;
-        int index = -1;
-        for(int i = 0; i < n; i++) {
+        int index = -1; // sentinels
+        for (int i = 0; i < n; i++) {
             int count = 0;
-            for(int j = 0; j < n; j++) {
-                if(array[i] == array[j]) {
+            for (int j = 0; j < n; j++) {
+                if (arr[i] == arr[j])
                     count++;
-                }
-                if(count > maxCount) {
-                    maxCount = count;
-                    index = 1;
-                }
             }
 
-            if (maxCount > n/2) {
-                System.out.println(array[index]);
-            }
-            else {
-                System.out.println("No majority Element");
+
+            if (count > maxCount) {
+                maxCount = count;
+                index = i;
             }
         }
+
+
+        if (maxCount > n / 2)
+            System.out.println(arr[index]);
+
+        else
+            System.out.println("No Majority Element");
     }
 
-    public static void main(String[] args) {
+    // Driver code
+    public static void main(String[] args)
+    {
 
-        int array[] = {1,1,1,4,3,1,2,1};
+        int arr[] = { 1, 1, 2, 1, 3, 5, 1 };
+        int n = arr.length;
 
-        int n = array.length;
-        findMajority(array, n);
+        // Function calling
+        findMajority(arr, n);
     }
 }
+
