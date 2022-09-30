@@ -11,5 +11,4 @@ public class Car1 extends Vehicle2{
         printDetails();
         System.out.println("Body Style: " + bodyStyle);
     }
-
 }

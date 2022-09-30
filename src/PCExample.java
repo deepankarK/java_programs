@@ -6,10 +6,6 @@ public class PCExample{
         return var;
     }
 
-//    public void setVar(int var) {
-//        this.var = var;
-//    }
-
     public static void main(String[] args) {
         PCExample obj = new PCExample(2);
         System.out.println("Value of var is " + obj.getVar());
